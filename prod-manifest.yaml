@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: prod-stedi-ricky
-          image: gcr.io/cubs-consulting/stedi #THIS IMAGE NEEDS TO REFER TO THE NEW ARTIFACT REGISTRY / SAME IMAGE AS IN DEV-MANIFEST (LINE 34), PLACE IT HERE
+          image: us-docker.pkg.dev/cit-262-team1-ez/ricky-api/stedi-api:latest #THIS IMAGE NEEDS TO REFER TO THE NEW ARTIFACT REGISTRY / SAME IMAGE AS IN DEV-MANIFEST (LINE 34), PLACE IT HERE
           env:
             - name: REDIS_PASSWORD
               valueFrom:
